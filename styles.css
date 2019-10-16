@@ -1,0 +1,882 @@
+/* Coded by Björn Bottin */
+/* Visit www.bjornbottin.co.za */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  width: 75%;
+}
+header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 3px grey;
+}
+h1 {
+  font-size: 1.5em;
+}
+.France {
+  float: left;
+  margin-right: 50px;
+}
+.France-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.France-left {
+  background-color: blue;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.France-middle {
+  background-color: white;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.France-right {
+  background-color: red;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Germany {
+  float: left;
+  margin-right: 50px;
+}
+.Germany-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.Germany-top {
+  background-color: black;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Germany-middle {
+  background-color: red;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Germany-bottom {
+  background-color: yellow;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Madagascar {
+  float: left;
+  margin-right: 50px;
+}
+.Madagascar-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.Madagascar-left {
+  background-color: white;
+  width: 33.3%;
+  height: 100%;
+  float: left;
+}
+.Madagascar-top-right {
+  background-color: red;
+  width: 66.6%;
+  height: 50%;
+  display: inline-block;
+}
+.Madagascar-bottom-right {
+  background-color: green;
+  width: 66.6%;
+  height: 50%;
+  display: inline-block;
+}
+.Switzerland {
+  float: left;
+  margin-right: 50px;
+}
+.Switzerland-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Switzerland-back {
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+}
+.Switzerland-horizontal {
+  background-color: #ffffff;
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 60px;
+  left: 65px;
+}
+.Switzerland-vertical {
+  background-color: #ffffff;
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  top: 30px;
+  left: 95px;
+}
+.Sweden {
+  float: left;
+  margin-right: 50px;
+}
+.Sweden-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Sweden-back {
+  background-color: #006aa7;
+  width: 100%;
+  height: 100%;
+}
+.Sweden-horizontal {
+  background-color: #fecc00;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+.Sweden-vertical {
+  background-color: #fecc00;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 65px;
+}
+.Gambia {
+  float: left;
+  margin-right: 50px;
+}
+.Gambia-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Gambia-top {
+  background-color: #ce1126;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Gambia-middle {
+  background-color: #0c1c8c;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+}
+.Gambia-bottom {
+  background-color: #3a7728;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Tonga {
+  float: left;
+  margin-right: 50px;
+}
+.Tonga-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Tonga-back {
+  background-color: #c10000;
+  width: 100%;
+  height: 100%;
+}
+.Tonga-corner {
+  width: 90px;
+  height: 70px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Tonga-horizontal {
+  background-color: #c10000;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.Tonga-vertical {
+  background-color: #c10000;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+.Japan {
+  float: left;
+  margin-right: 50px;
+}
+.Japan-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Japan-back {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.Japan-circle {
+  width: 90px;
+  height: 90px;
+  background-color: #bc002d;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  border-radius: 50%;
+}
+.Greece {
+  float: left;
+  margin-right: 50px;
+}
+.Greece-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Greece-line {
+  background-color: #0d5eaf;
+  width: 100%;
+  height: 16.3px;
+}
+.Greece-line-alt {
+  background-color: #ffffff;
+  width: 100%;
+  height: 16.3px;
+}
+.Greece-corner {
+  width: 81.5px;
+  height: 81.5px;
+  background-color: #0d5eaf;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.Greece-horizontal {
+  background-color: #ffffff;
+  width: 81.5px;
+  height: 16.3px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 2;
+}
+.Greece-vertical {
+  background-color: #ffffff;
+  width: 16.3px;
+  height: 81.5px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  z-index: 2;
+}
+.Niger {
+  float: left;
+  margin-right: 50px;
+}
+.Niger-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Niger-top {
+  background-color: #e05206;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Niger-middle {
+  background-color: #ffffff;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Niger-bottom {
+  background-color: #0db02b;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Niger-circle {
+  width: 42px;
+  height: 42px;
+  background-color: #e05206;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.Maldives {
+  float: left;
+  margin-right: 50px;
+}
+.Maldives-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+  position: relative;
+}
+.Maldives-back {
+  background-color: #d21034;
+  width: 100%;
+  height: 100%;
+}
+.Maldives-middle {
+  background-color: #007e3a;
+  width: 140px;
+  height: 74px;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+}
+.Maldives-circle-white {
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.Maldives-circle-green {
+  width: 42px;
+  height: 42px;
+  background-color: #007e3a;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.USA {
+  float: left;
+  margin-right: 50px;
+}
+.USA-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  position: relative;
+}
+.USA-line {
+  background-color: #b22234;
+  width: 100%;
+  height: 7.69%;
+}
+.USA-line-alt {
+  background-color: #ffffff;
+  width: 100%;
+  height: 7.69%;
+}
+.USA-corner {
+  width: 48%;
+  height: 53.84%;
+  background-color: #3c3b6e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #ffffff;
+}
+.USA-star-row1 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-left: 5px;
+  padding-right: 11px;
+}
+.USA-star-row2 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 13px;
+  padding-right: 11px;
+}
+.USA-star-row3 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-left: 5px;
+  padding-right: 11px;
+}
+.USA-star-row4 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 24px;
+  margin-left: 13px;
+  padding-right: 11px;
+}
+.USA-star-row5 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 32px;
+  margin-left: 5px;
+  padding-right: 11px;
+}
+.USA-star-row6 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-left: 13px;
+  padding-right: 11px;
+}
+.USA-star-row7 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 48px;
+  margin-left: 5px;
+  padding-right: 11px;
+}
+.USA-star-row8 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 56px;
+  margin-left: 13px;
+  padding-right: 11px;
+}
+.USA-star-row9 {
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  margin-top: 64px;
+  margin-left: 5px;
+  padding-right: 11px;
+}
+.Italy {
+  float: left;
+  margin-right: 50px;
+}
+.Italy-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.Italy-left {
+  background-color: #009246;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Italy-middle {
+  background-color: #ffffff;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Italy-right {
+  background-color: #ce2b37;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Australia {
+  float: left;
+  margin-right: 50px;
+}
+.Australia-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  position: relative;
+  background-color: #00008b;
+}
+.Australia-corner {
+  width: 48%;
+  height: 49.84%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #ffffff;
+  overflow: hidden;
+}
+.Australia-horizontal {
+  background-color: #ffffff;
+  width: 48%;
+  height: 18.3px;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  z-index: 2;
+}
+.Australia-vertical {
+  background-color: #ffffff;
+  width: 18.3px;
+  height: 49.84%;
+  position: absolute;
+  top: 0;
+  left: 42px;
+  z-index: 2;
+}
+.Australia-horizontal-red {
+  background-color: #ff0000;
+  width: 48%;
+  height: 10.3px;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  z-index: 2;
+}
+.Australia-vertical-red {
+  background-color: #ff0000;
+  width: 10.3px;
+  height: 49.84%;
+  position: absolute;
+  top: 0;
+  left: 46px;
+  z-index: 2;
+}
+.Australia-cross-white {
+  width: 134px;
+  height: 15px;
+  background-color: #ffffff;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: -14px;
+  transform: rotate(38deg);
+  position: relative;
+}
+.Australia-cross-white:after {
+  content: "";
+  position: absolute;
+  width: 134px;
+  height: 15px;
+  background-color: #ffffff;
+  z-index: 1;
+  margin-top: -1px;
+  margin-left: 0px;
+  transform: rotate(284deg);
+}
+.Australia-cross-red {
+  width: 67px;
+  height: 5px;
+  background-color: #ff0000;
+  z-index: 1;
+  margin-top: -30px;
+  margin-left: -10px;
+  transform: rotate(38deg);
+  position: relative;
+}
+.Australia-cross-red:after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 5px;
+  background-color: #ff0000;
+  z-index: 1;
+  margin-top: 25px;
+  margin-left: 31px;
+  transform: rotate(284deg);
+}
+.Australia-cross-red1 {
+  width: 67px;
+  height: 5px;
+  background-color: #ff0000;
+  z-index: 1;
+  margin-top: -10px;
+  margin-left: 47px;
+  transform: rotate(322deg);
+  position: relative;
+}
+.Australia-cross-red1:after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 5px;
+  background-color: #ff0000;
+  z-index: 1;
+  margin-top: 50px;
+  margin-left: -23px;
+  transform: rotate(76deg);
+}
+.Australia-star1 {
+  position: absolute;
+  z-index: 2;
+  width: 35px;
+  height: 35px;
+  top: 85px;
+  left: 33px;
+}
+.Australia-star2 {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  top: 12px;
+  left: 150px;
+}
+.Australia-star3 {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  top: 55px;
+  left: 120px;
+}
+.Australia-star4 {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  top: 45px;
+  left: 175px;
+}
+.Australia-star5 {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  top: 105px;
+  left: 145px;
+}
+.Australia-star6 {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  top: 55px;
+  left: 165px;
+  color: #ffffff;
+}
+.Ireland {
+  float: left;
+  margin-right: 50px;
+}
+.Ireland-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.Ireland-left {
+  background-color: #009b48;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Ireland-middle {
+  background-color: #ffffff;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Ireland-right {
+  background-color: #ff7900;
+  width: 33.3%;
+  height: 100%;
+  display: inline-block;
+}
+.Russia {
+  float: left;
+  margin-right: 50px;
+}
+.Russia-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  font-size: 0;
+}
+.Russia-top {
+  background-color: #ffffff;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Russia-middle {
+  background-color: #0039a6;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.Russia-bottom {
+  background-color: #d52b1e;
+  width: 100%;
+  height: 33.3333%;
+  display: inline-block;
+}
+.China {
+  float: left;
+  margin-right: 50px;
+}
+.China-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  background-color: #de2910;
+  position: relative;
+}
+.China-star-big {
+  color: #ffde00;
+  font-size: 3.5em;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  z-index: 1;
+}
+.China-star1 {
+  color: #ffde00;
+  font-size: 1em;
+  position: absolute;
+  top: 0px;
+  left: 65px;
+  z-index: 1;
+  transform: rotate(21deg);
+}
+.China-star2 {
+  color: #ffde00;
+  font-size: 1em;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  z-index: 1;
+  transform: rotate(-12deg);
+}
+.China-star3 {
+  color: #ffde00;
+  font-size: 1em;
+  position: absolute;
+  top: 44px;
+  left: 80px;
+  z-index: 1;
+  transform: rotate(-6deg);
+}
+.China-star4 {
+  color: #ffde00;
+  font-size: 1em;
+  position: absolute;
+  top: 64px;
+  left: 65px;
+  z-index: 1;
+  transform: rotate(8deg);
+}
+.Algeria {
+  float: left;
+  margin-right: 50px;
+}
+.Algeria-flag {
+  width: 220px;
+  height: 150px;
+  display: block;
+  border: 2px solid black;
+  position: relative;
+}
+.Algeria-left {
+  width: 50%;
+  height: 100%;
+  background-color: #006233;
+  display: inline-block;
+}
+.Algeria-right {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.Algeria-moon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: -15px 0px 0 12px #d21034;
+  z-index: 1;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 95px;
+}
+.Algeria-star {
+  color: #d21034;
+  font-size: 2.5em;
+  position: absolute;
+  top: 38px;
+  left: 105px;
+  z-index: 1;
+  transform: rotate(18deg);
+}
+.clear {
+  clear: both;
+  height: 20px;
+}
+footer {
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+}
